@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+<style>
+	@font-face {
+   	font-family: "Lalezar-Regular";
+    	src: url("Lalezar-Regular.otf") format("opentype");
+}
+
+body {
+    font-family: "Lalezar-Regular", sans-serif;
+}
+</style>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>سبحان عزیزم❤️</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600&display=swap');
+
+        /* =========================
+           تنظیمات اصلی صفحه
+        ========================== */
+
+        :root {
+
+            --background: #120d12;
+
+            --card: #1d141b;
+
+            --text: #fff7fb;
+
+            --muted: #cdbdc7;
+
+            --pink: #e8a9c3;
+
+            --pink-dark: #b9688d;
+
+            --line: rgba(255,255,255,0.10);
+
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            margin: 0;
+
+            background:
+
+                radial-gradient(
+                    circle at 20% 10%,
+                    rgba(232,169,195,0.12),
+                    transparent 28%
+                ),
+
+                radial-gradient(
+                    circle at 80% 70%,
+                    rgba(185,104,141,0.10),
+                    transparent 30%
+                ),
+
+                var(--background);
+
+            color: var(--text);
+
+            font-family: "Lalezar-Regular", sans-serif;
+
+            overflow-x: hidden;
+        }
+
+
+
+        /* =========================
+           قلب‌های شناور
+        ========================== */
+
+        .hearts {
+
+            position: fixed;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            overflow: hidden;
+
+            z-index: 0;
+        }
+
+
+        .heart {
+
+            position: absolute;
+
+            bottom: -40px;
+
+            opacity: 0;
+
+            animation: floatUp linear infinite;
+
+            color: rgba(232,169,195,0.45);
+
+            font-size: 18px;
+        }
+
+
+        @keyframes floatUp {
+
+            0% {
+
+                transform:
+                    translateY(0)
+                    rotate(0deg);
+
+                opacity: 0;
+            }
+
+            15% {
+                opacity: 0.8;
+            }
+
+            85% {
+                opacity: 0.35;
+            }
+
+            100% {
+
+                transform:
+                    translateY(-110vh)
+                    rotate(25deg);
+
+                opacity: 0;
+            }
+
+        }
+
+
+
+        /* =========================
+           صفحه اصلی
+        ========================== */
+
+        .page {
+
+            position: relative;
+
+            z-index: 1;
+
+            width: min(900px, 92%);
+
+            margin: auto;
+        }
+
+
+
+        /* =========================
+           صفحه اول
+        ========================== */
+
+        .hero {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            padding: 60px 10px;
+        }
+
+
+        .small {
+
+            color: var(--pink);
+
+            letter-spacing: 3px;
+
+            font-size: 12px;
+
+            margin-bottom: 18px;
+        }
+
+
+        .hero h1 {
+
+            font-family: "Lalezar-Regular", serif;
+
+            font-size: clamp(48px, 12vw, 95px);
+
+            font-weight: 600;
+
+            margin: 0;
+
+            line-height: 1;
+        }
+
+
+        .hero p {
+
+            color: var(--muted);
+
+            max-width: 570px;
+
+            line-height: 2;
+
+            font-size: 15px;
+
+            margin: 25px auto;
+        }
+
+
+        .scroll {
+
+            margin-top: 40px;
+
+            color: var(--pink);
+
+            font-size: 13px;
+
+            animation: bounce 1.8s infinite;
+        }
+
+
+        @keyframes bounce {
+
+            50% {
+                transform: translateY(8px);
+            }
+
+        }
+
+
+
+        /* =========================
+           بخش‌ها
+        ========================== */
+
+        section {
+
+            padding: 90px 0;
+        }
+
+
+        .section-title {
+
+            text-align: center;
+
+            margin-bottom: 35px;
+        }
+
+
+        .section-title span {
+
+            color: var(--pink);
+
+            font-size: 12px;
+
+            letter-spacing: 2px;
+        }
+
+
+        .section-title h2 {
+
+            margin: 8px 0;
+
+            font-size: 28px;
+        }
+
+
+
+        /* =========================
+           ویدئو
+        ========================== */
+
+        .video-card {
+
+            background:
+                rgba(29,20,27,0.82);
+
+            border:
+                1px solid var(--line);
+
+            border-radius: 26px;
+
+            padding: 14px;
+
+            box-shadow:
+                0 20px 70px rgba(0,0,0,0.35);
+
+            backdrop-filter: blur(10px);
+        }
+
+
+        .video-wrap {
+
+            position: relative;
+
+            aspect-ratio: 16 / 9;
+
+            border-radius: 18px;
+
+            overflow: hidden;
+
+            background: #090609;
+        }
+
+
+        .video-wrap iframe {
+
+            width: 100%;
+
+            height: 100%;
+
+            border: none;
+        }
+
+
+        .video-note {
+
+            text-align: center;
+
+            color: var(--muted);
+
+            font-size: 12px;
+
+            margin:
+                14px 5px 3px;
+        }
+
+
+
+        /* =========================
+           نامه
+        ========================== */
+
+        .letter {
+
+            background:
+
+                linear-gradient(
+                    145deg,
+                    rgba(232,169,195,0.10),
+                    rgba(255,255,255,0.03)
+                );
+
+            border:
+                1px solid var(--line);
+
+            border-radius: 26px;
+
+            padding: 35px 30px;
+
+            line-height: 2.3;
+
+            color: #f7eaf0;
+
+            text-align: center;
+        }
+
+
+        .big-heart {
+
+            font-size: 32px;
+
+            margin-bottom: 10px;
+        }
+
+
+
+        /* =========================
+           گالری
+        ========================== */
+
+        .gallery {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 12px;
+        }
+
+
+        .gallery img {
+
+            width: 100%;
+
+            aspect-ratio: 1;
+
+            object-fit: cover;
+
+            border-radius: 18px;
+
+            border:
+                1px solid var(--line);
+
+            transition: 0.35s;
+        }
+
+
+        .gallery img:hover {
+
+            transform: scale(1.025);
+        }
+
+
+
+        /* =========================
+           پایان صفحه
+        ========================== */
+
+        .final {
+
+            text-align: center;
+
+            padding-bottom: 110px;
+        }
+
+
+        .final h2 {
+
+            font-family:
+                "Lalezar-Regular",
+                serif;
+
+            font-size: 42px;
+
+            margin:
+                0 0 15px;
+        }
+
+
+        .final p {
+
+            color: var(--muted);
+
+            line-height: 2;
+        }
+
+
+        .date {
+
+            display: inline-block;
+
+            margin-top: 20px;
+
+            padding:
+                9px 18px;
+
+            border:
+                1px solid var(--line);
+
+            border-radius: 999px;
+
+            color: var(--pink);
+
+            font-size: 12px;
+        }
+
+
+
+        /* =========================
+           دکمه موسیقی
+        ========================== */
+
+        .music-btn {
+
+            position: fixed;
+
+            left: 20px;
+
+            bottom: 20px;
+
+            z-index: 10;
+
+            width: 48px;
+
+            height: 48px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid var(--line);
+
+            background:
+                rgba(29,20,27,0.88);
+
+            color: var(--pink);
+
+            cursor: pointer;
+
+            font-size: 18px;
+
+            backdrop-filter: blur(10px);
+        }
+
+
+
+        /* =========================
+           موبایل
+        ========================== */
+
+        @media(max-width:600px) {
+
+            section {
+                padding: 65px 0;
+            }
+
+
+            .gallery {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+
+            .gallery img:last-child {
+
+                display: none;
+            }
+
+
+            .letter {
+
+                padding:
+                    27px 20px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================
+         قلب‌های شناور
+    =================================== -->
+
+    <div
+        class="hearts"
+        id="hearts">
+    </div>
+
+
+
+    <main class="page">
+
+
+
+        <!-- ==================================
+             صفحه اول
+        =================================== -->
+
+        <section class="hero">
+
+
+            <!-- متن کوچک بالای صفحه -->
+
+            <div class="small">
+
+                قلب من سلام
+
+            </div>
+
+
+
+            <!-- عنوان اصلی -->
+
+            <h1>
+
+                تولدت کلی مبارکمون باشه دورت بگردم❤️
+
+            </h1>
+
+
+
+            <!-- متن زیر عنوان -->
+
+            <p>
+
+              
+
+                <br>
+
+                این صفحه رو بخاطر این درست کردم که بهت گوشه ای از عشقمو نشون بدم
+
+            </p>
+
+
+
+            <div class="scroll">
+
+                ↓ یکم برو پایین خوشگله ↓
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+        <!-- ==================================
+             بخش فیلم
+        =================================== -->
+
+        <section>
+
+
+            <div class="section-title">
+
+
+                <span>
+
+                    سبحان جونمممم
+
+                </span>
+
+
+                <h2>
+
+                    تولـدت مبــارک🎂🥂
+
+                </h2>
+
+
+            </div>
+
+
+
+            <div class="video-card">
+
+
+                <div class="video-wrap">
+
+
+                    <!--
+                        اینجا لینک Google Drive
+                        فیلمت قرار می‌گیرد.
+
+                        مثال:
+
+                        https://drive.google.com/file/d/1K4MpxV1qQ7pKuRQctVheP-VV28x5P-td/view?usp=drive_link
+                    -->
+
+
+                    <iframe
+
+                        src="https://drive.google.com/file/d/1K4MpxV1qQ7pKuRQctVheP-VV28x5P-td/preview"
+
+                        allow="autoplay">
+
+                    </iframe>
+
+
+                </div>
+
+
+
+                <div class="video-note">
+
+                 قلب من💕
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+        <!-- ==================================
+             نامه
+        =================================== -->
+
+        <section>
+
+
+            <div class="section-title">
+
+
+                <span>
+
+                    🙂🎀این واسه توعه
+
+                </span>
+
+
+                <h2>
+
+                    نوشته پایین رو بخون:)
+
+                </h2>
+
+
+            </div>
+
+
+
+            <div class="letter">
+
+
+                <div class="big-heart">
+
+                    ♡
+
+                </div>
+
+
+
+                <!--
+                   
+
+                فکر می‌کنم بعضی آدم‌ها قرار نیست فقط وارد زندگی آدم بشن...
+قرارِ یه تیکه از زندگی آدم بشن.
+
+                -->
+
+
+                
+وقتی به اولین روزهای آشناییمون فکر می‌کنم،
+هیچ‌وقت فکر نمی‌کردم یه روزی این‌همه خاطره با هم داشته باشیم.
+این‌همه عکس،
+این‌همه خنده،
+این‌همه روز خوب...
+و حتی روزهایی که سخت گذشت.
+
+
+
+                <br><br>
+
+ما فقط روزهای قشنگ رو کنار هم نداشتیم.
+بعضی وقت‌ها ناراحت شدیم،
+بعضی وقت‌ها از هم دلخور شدیم،
+ولی دوباره همدیگه رو انتخاب کردیم.
+
+و شاید قشنگ‌ترین قسمت داستانمون همین باشه...
+اینکه بین تمام اتفاق‌هایی که افتاد،
+باز هم «ما» ادامه پیدا کرد.
+
+از اولین روزی که وارد زندگیم شدی
+تا امروز،
+خیلی چیزها عوض شده...
+ولی هنوز وقتی بعضی عکس‌هامون رو می‌بینم،
+همون حس خوب روزهای اول برمی‌گرده.
+
+این ویدئو فقط چندتا عکس و فیلم نیست.
+یه تکه از زندگی منه...
+از زندگیِ «ما».
+
+و حالا که به تولد امسالت رسیدیم،
+فقط می‌خوام بگم:
+خوشحالم که تو رو توی این قسمت از زندگیم دارم.
+خوشحالم برای تمام خاطره‌هایی که تا امروز ساختیم،
+و بیشتر از اون،
+برای تمام خاطره‌هایی که هنوز نساختیم.
+
+تولدت مبارک، عشق من. ❤️
+امیدوارم سال بعد،
+وقتی دوباره این ویدئو رو نگاه می‌کنیم،
+باز هم کلی دلیل برای لبخند زدن داشته باشیم.
+
+                <br><br>
+
+
+به خاطر تمام «اولین»‌هامون،
+تمام «با هم»‌هامون،
+و تمام چیزهایی که هنوز قراره با هم تجربه کنیم...
+دوستت دارم. ❤️
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+        <!-- ==================================
+             گالری عکس
+        =================================== -->
+
+        <section>
+
+
+            <div class="section-title">
+
+
+                <span>
+
+                    اینارو ببین حال کنااا
+
+                </span>
+
+
+                <h2>
+
+                    Sofamin gallery🍓
+                </h2>
+
+
+            </div>
+
+
+
+            <div class="gallery">
+
+
+                <!--
+                    اسم عکس‌ها را تغییر بده.
+
+                    مثلاً:
+
+                    photo1.jpg
+
+                    photo2.jpg
+
+                    photo3.jpg
+                -->
+
+
+                <img
+                    src="images/photo1.jpg"
+                    alt="خاطره ۱"
+                >
+
+
+                <img
+                    src="images/photo2.jpg"
+                    alt="خاطره ۲"
+                >
+
+
+                <img
+                    src="images/photo3.jpg"
+                    alt="خاطره ۳"
+                >
+
+
+                <img
+                    src="images/photo4.jpg"
+                    alt="خاطره ۴"
+                >
+
+
+                <img
+                    src="images/photo5.jpg"
+                    alt="خاطره ۵"
+                >
+
+
+                <img
+                    src="images/photo6.jpg"
+                    alt="خاطره ۶"
+                >
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+        <!-- ==================================
+             پایان
+        =================================== -->
+
+        <section class="final">
+
+
+            <h2>
+
+                عاشقتم ❤️
+
+            </h2>
+
+
+
+            <p>
+
+                بازم تولدت مبارک عمر فاطمه
+
+
+                <br>
+
+
+                مرسی که با اومدنت به این دنیا کلی عشق هدیه کردی و زندگیمو جذابتر کردی💜:)
+
+            </p>
+
+
+
+            <div class="date">
+
+                10 مهر 1405
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+
+
+    <!-- ==================================
+         دکمه موسیقی
+    =================================== -->
+
+
+    <button
+        class="music-btn"
+        id="musicBtn"
+        aria-label="موسیقی">
+
+        ♫
+
+    </button>
+
+
+
+    <!--
+        اگر موسیقی خواستی:
+
+        یک فایل به نام
+
+        music.mp3
+
+        کنار فایل HTML قرار بده.
+    -->
+
+
+    <audio
+        id="music"
+        loop>
+
+        <source
+            src="music.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+
+
+
+    <script>
+
+
+        /* ==================================
+           ساخت قلب‌های شناور
+        =================================== */
+
+
+        const hearts =
+            document.getElementById("hearts");
+
+
+        for(let i = 0; i < 18; i++) {
+
+
+            const heart =
+                document.createElement("div");
+
+
+            heart.className =
+                "heart";
+
+
+            heart.innerHTML =
+                Math.random() > 0.5
+                ? "♡"
+                : "♥";
+
+
+            heart.style.left =
+                Math.random() * 100 + "%";
+
+
+            heart.style.animationDuration =
+                (8 + Math.random() * 9) + "s";
+
+
+            heart.style.animationDelay =
+                (Math.random() * 8) + "s";
+
+
+            heart.style.fontSize =
+                (12 + Math.random() * 14) + "px";
+
+
+            hearts.appendChild(heart);
+
+        }
+
+
+
+
+
+        /* ==================================
+           موسیقی
+        =================================== */
+
+
+        const music =
+            document.getElementById("music");
+
+
+        const musicBtn =
+            document.getElementById("musicBtn");
+
+
+        let playing = false;
+
+
+
+        musicBtn.addEventListener(
+            "click",
+            async () => {
+
+
+                if(!playing) {
+
+
+                    try {
+
+
+                        await music.play();
+
+
+                        playing = true;
+
+
+                        musicBtn.textContent =
+                            "❚❚";
+
+
+                    }
+
+
+                    catch(e) {
+
+
+                        alert(
+                            "فایل music.mp3 را کنار فایل HTML قرار بده."
+                        );
+
+
+                    }
+
+
+                }
+
+
+                else {
+
+
+                    music.pause();
+
+
+                    playing = false;
+
+
+                    musicBtn.textContent =
+                        "♫";
+
+                }
+
+            }
+        );
+
+
+    </script>
+
+
+</body>
+
+</html>
